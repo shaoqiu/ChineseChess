@@ -1,0 +1,47 @@
+GtkWindow {
+background-color: rgba(254,242,190,1);    /*  CadetBlue  */
+}
+
+GtkTreeView {
+-GtkWidget-focus-line-width: 0;
+-GtkTreeView-vertical-separator: 10;  /* height of cells */
+background-color:  rgba(243,226,199,1); 
+/*background-image: url("photo/bg.jpg");*/
+}
+
+GtkTextView {
+color: blue;
+font: Serif 12;
+border-width: 2px;
+background-color: rgba(243,226,199,1);
+/*background-image: url("photo/text_view_bg.png");*/
+-GtkWidget-cursor-color: blue;
+}
+GtkTextView:selected{
+	background-color: gray;
+	color: red;
+}
+
+
+GtkTreeView:selected {
+background-image: -gtk-gradient (linear,
+             left top,
+             left bottom,
+             color-stop(0.0,rgba(34,97,170,1)),
+             color-stop(0.50,rgba(56,145,218,1)),
+             color-stop(0.51,rgba(34,131,216,1)),
+             color-stop(1.00,rgba(134,191,234,1)));
+}
+
+column-header .button {
+color: #1C6F3B;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+font: Sans 16;
+background-image: -gtk-gradient(linear,
+            left top,
+            left bottom,
+            color-stop(0.0,rgba(243,226,199,1)),
+            color-stop(0.83,rgba(193,158,103,1)),
+            color-stop(1.00,rgba(233,212,179,1)));
+}
